@@ -12,6 +12,7 @@ body {
   background-image: url(/images/orange-backdrop.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #F99501;
 }
 .hero-section p {
   font-size: 46px;
