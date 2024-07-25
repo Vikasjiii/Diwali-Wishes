@@ -12,12 +12,16 @@ body {
   background-image: url(/images/orange-backdrop.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #F99501;
+  background-color: #f99501;
+}
+.paragraph-and-audio {
+  margin-left: 15rem;
 }
 .hero-section p {
   font-size: 46px;
   max-width: 540px;
 }
+
 .audio-container {
   display: flex;
   background-color: rgba(251, 216, 164, 1);
@@ -25,25 +29,26 @@ body {
   justify-content: center;
   align-items: center;
   max-width: max-content;
+  /* above property is in very good use case here */
   padding-left: 20px;
 }
 audio::-webkit-media-controls-panel {
   background-color: rgba(251, 216, 164, 1);
 }
-.paragraph-and-audio {
-  margin-left: 15rem;
-}
+
 .lakshmi-ganesha-section {
   background-color: rgba(249, 149, 1, 1);
   padding-top: 1rem;
   padding-inline: 1rem;
   padding-bottom: 1px;
+  /* it avoides stacking context */
 }
 
 .lakshmi-ganesha-section img {
   max-width: 900px;
   width: 100%;
   display: block;
+  /* after giving block now img takes full width,so margine-inline will work */
   margin-inline: auto;
 }
 .horizontal-divider {
@@ -54,7 +59,6 @@ audio::-webkit-media-controls-panel {
   max-width: 800px;
 
   margin-inline: auto;
-  /* margin-top: 50px; */
   margin-bottom: 2rem;
 }
 .horizontal-line {
@@ -99,7 +103,7 @@ audio::-webkit-media-controls-panel {
   margin-left: -80px;
 }
 
-.lakshmi-ganesha-card{
+.lakshmi-ganesha-card {
   background-color: white;
   padding: 64px;
   border-radius: 24px;
@@ -108,33 +112,32 @@ audio::-webkit-media-controls-panel {
   /* justify-content: center;
   align-items: center; */
   /* width: 100%; */
-  margin-inline:auto;
+  margin-inline: auto;
   /* box-sizing: border-box; */
-
 }
 
-.lakshmi-ganesha-card img{
-width: 50%;
+.lakshmi-ganesha-card img {
+  width: 50%;
 }
 
-.thankyou-text{
+.thankyou-text {
   max-width: 900px;
-  margin-inline:auto;
+  margin-inline: auto;
   /* padding-block: 1rem;
   padding-right: 8rem;
   padding-left: 0; */
   width: 100%;
 }
 
-.thankyou-text h2{
-  font-family: 'style script';
+.thankyou-text h2 {
+  font-family: "style script";
   font-size: 54px;
 
   font-weight: 400;
   /* margin-left: 0; */
 }
 
-.creator{
+.creator {
   text-align: right;
   font-size: 14px;
 }
@@ -146,6 +149,7 @@ width: 50%;
   .deepak-1 {
     display: block;
     margin-left: auto;
+    /* It is very good use case here */
   }
   .deepak-2,
   .playing-music,
@@ -166,20 +170,17 @@ width: 50%;
   .white-card-container img {
     width: 160px;
     /* margin-left: -60px; */
-   
   }
   .white-card-container p {
     font-size: 1.25rem;
-   
   }
   .lakshmi-ganesha-card {
     padding: 2rem;
   }
-  .thankyou-text h2{
+  .thankyou-text h2 {
     font-size: 32px;
   }
 }
-
 
 @media (max-width: 550px) {
   .hero-section p {
@@ -187,13 +188,13 @@ width: 50%;
   }
   .deepak-1 {
     width: 100%;
+    /* It is very good use case here */
   }
   .wish {
     font-size: 32px;
   }
-   .white-card-container p {
+  .white-card-container p {
     font-size: 1rem;
-   
   }
 }
 /* 
